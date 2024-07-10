@@ -1,0 +1,47 @@
+[{
+    "id": 1,
+    "product_name": "Chocho Musk",
+    "price": "#88,000.00",
+    "image": "/imgs/image1.png",
+    "category": "perfume",
+    "likes": 3,
+    "unlikes": 1
+},
+{
+    "id": 2,
+    "product_name": "Castle Princess",
+    "price": "#50,000.00",
+    "image": "/imgs/image2.png",
+    "category": "perfume",
+    "likes": 2,
+    "unlikes": 2
+},
+{
+    "id": 3,
+    "product_name": "Raayhan",
+    "price": "#100,000.00",
+    "image": "/imgs/image3.png",
+    "category": "perfume",
+    "likes": 2,
+    "unlikes": 2
+},
+{
+    "id": 4,
+    "product_name": "Kaheela Platinum",
+    "price": "#40,000.00",
+    "image": "/imgs/image4.png",
+    "category": "perfume",
+    "likes": 3,
+    "unlikes": 1
+
+},
+{
+    "id": 5,
+    "product_name": "Saheeb Platinum",
+    "price": "#77,000.00",
+    "image": "/imgs/image5.png",
+    "category": "perfume",
+    "likes": 2,
+    "unlikes": 2
+}
+]

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +35,222 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@layer components {
+  .header_button{
+    width:175px;
+    height: 44px;
+    top:34px;
+    left:1150px;
+    border-radius:10px;
+    padding: auto;
+    color: #2c2c2c;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .welcome{
+    box-shadow: 0 4px 4px #1D4648 ;
+  }
+  blockquote {
+    padding: 1em;
+    margin: 1em 0;
+    /* border-left: 5px solid #ccc; */
+    /* background: #f9f9f9; */
+    font-style: italic;
+    color: #555;
+    position: relative;
+  }
+  
+  blockquote::before {
+    content: "“";
+    font-size: 4em;
+    color: #ccc;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    line-height: 0.5em;
+  }
+
+  blockquote::after {
+    content: "”";
+    font-size: 4em;
+    color: #ccc;
+    position: absolute;
+    right: 10px;
+    bottom: -40px;
+    line-height: 0.5em;
+  }
+
+  .dash{
+    position: relative;
+    &::before{
+      content:'';
+      position: absolute;
+      background: black;
+      width: 20px;
+      height: 5px;
+      top:calc(50% - 5px);
+      right:calc(50% -50px);
+      z-index: 1;
+    }
+  }
+
+  .caption {
+    padding: 1em;
+    margin: 1em 0;
+    /* border-left: 5px solid #ccc; */
+    /* background: #f9f9f9; */
+    font-style: italic;
+    color: white;
+    position: relative;
+  }
+  
+  .caption::before {
+    content: "“";
+    font-size: 4em;
+    color: #ccc;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    line-height: 0.5em;
+  }
+  table, tr, th, td {
+    border-collapse: collapse;
+    /* border: 1px solid black; */
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .active{
+    color:#569c4b;
+    font-weight: 700;
+  }
+.experience{
+  font-family: 'Inria Serif', serif;
+  line-height: 17.96px;
+  font-size: 15px; 
+  font-weight: 300;
+  font-style: italic;
+}
+.prod_highlight{
+  background: #579C4B;
+  color: #4e4545;
+  border: 2px solid #579C4B;
+
+}
+
+.prod_unhighlight{
+  background: white;
+  color: #4e4545;
+  border: 2px solid #579C4B;
+
+}
+
+.highlight{
+  background-color: #4e4545;
+  color: white;
+}
+
+.unhighlight{
+  background-color: white;
+  color: #4e4545;
+}
+
+  .caption::after {
+    content: "”";
+    font-size: 4em;
+    color: #ccc;
+    position: absolute;
+    right: 10px;
+    bottom: -40px;
+    line-height: 0.5em;
+  }
+
+  .logo{
+    cursor: pointer;
+  }
+  .isvisible{
+    height: max-content;
+    overflow-y: visible;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    transition: all ease 1s;
+    
+  }
+  .invisible{
+    height:0;
+    transition: all ease 1s
+  }
+
+  .featured{
+    position: relative;
+    &::before{
+      content:'';
+      position: absolute;
+      background-color: #7EB476;
+      height: 2px;
+      width: 90%;
+      bottom: 10px;
+      border: 2px #7EB476;
+    }
+  }
+
+  .image{
+    scale: 1;
+    transition: all 1s ease;
+    &:hover{
+      cursor: pointer;
+      scale: 1.5;
+      transition: all 1s ease;
+    }
+  }
+
+  .menu-link{
+    margin-top: 0px;
+    transition: margin-top 1s ease;
+    &:hover{
+      margin-top: -10px;
+      transition: margin-top 1s ease;
+    }
+  }
+
+  .welcome_section{
+    background-image: url('../../public/imgs/welcome_logo.png');
+    background-size: cover;
+    background-position: center;
+    background-position-y: 0%;
+    /* height: 900px; */
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    position: relative;
+    &::before{
+      position: absolute;
+      z-index: 5;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4);
+      /* background-color: rgba(115,165,92,0.3); */
+      /* rgba(0,0,0,0.4); */
+      top: 0;
+
+    }
+  }
+
+  .activate_cart{
+    color: #579C4B;
+    /* background-color: #579C4B; */
+  }
+
+  .deactivate_cart{
+    color: black;
+  }
+
+  .title{
+    -webkit-text-stroke: 1px #569c4b;
+    color: white;
+    text-shadow: 2px 2px 4px #569c4b;
+  }
+
 }
